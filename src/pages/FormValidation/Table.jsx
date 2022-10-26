@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { studentDel, studentEdit } from "../redux/reducer/svReducer";
+import { studentDel, studentEdit } from "../../redux/reducer/svReducer";
 class Table extends Component {
   render() {
     return (

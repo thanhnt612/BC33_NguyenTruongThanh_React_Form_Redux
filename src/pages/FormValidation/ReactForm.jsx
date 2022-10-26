@@ -4,7 +4,7 @@ import {
   studentNew,
   studentSearch,
   studentUpdate,
-} from "../redux/reducer/svReducer";
+} from "../../redux/reducer/svReducer";
 import Table from "./Table";
 class ReactForm extends Component {
   state = {
@@ -90,14 +90,14 @@ class ReactForm extends Component {
         keyWord: value,
       },
       () => {
-        console.log(value);
+        // console.log(value);
       }
     );
   };
   componentDidUpdate(prevProps, prevState) {
     if (prevProps.arrEdit.id !== this.props.arrEdit.id) {
-      console.log(prevProps.arrEdit.id);
-      console.log(this.props.arrEdit.id);
+      // console.log(prevProps.arrEdit.id);
+      // console.log(this.props.arrEdit.id);
       this.setState({
         values: this.props.arrEdit,
       });

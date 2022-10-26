@@ -4,8 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./redux/configStore";
 import HomeTemplates from "./templates/HomeTemplates";
-
-import ReactForm from "./Component/ReactForm";
+import ReactForm from "./pages/FormValidation/ReactForm";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
